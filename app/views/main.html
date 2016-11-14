@@ -1,16 +1,13 @@
 <div class="header">
   <ul class="nav nav-pills pull-right">
-    <li class="active"><a href="">Torrents</a></li>
-    <li>
-      <a href="https://github.com/asapach/peerflix-server" target="_blank">
-        <i class="fa fa-github"></i> About</a>
-    </li>
+    <li class="active"><a href="http://www.tricksrobo.com">Home</a></li>
+    
   </ul>
-  <h3 class="text-muted text-nowrap"><img src="images/logo.svg" alt="logo" height="40"> peerflix server</h3>
+  <h3 class="text-muted text-nowrap"><img src="magnet:?xt=urn:btih:26fcb96cb5451f1080c09dbd7749219bc13d27ce&dn=Sausage.Party.2016.720p.BRRip.x264.AAC-ETRG&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.to%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce" alt="logo" height="40">TricksRobo Torrent</h3>
 </div>
 
 <div class="jumbotron" ng-file-drop ng-file-change="upload($files)">
-  <h1>Stream Torrents</h1>
+  <h1>TR Torrents</h1>
   <div class="form-group">
     <div class="input-group">
       <span class="input-group-addon">torrent:</span>
@@ -43,7 +40,7 @@
         'fa-refresh fa-spin': !torrent.ready,
         'fa-exchange': torrent.interested }">
       </span>
-      {{ torrent.name || 'Fetching metadata...' }}
+      {{ torrent.name || 'Please wait...' }}
     </div>
     <div class="panel-body">
       <div class="progress progress-striped" ng-class="{ active: torrent.interested }">
@@ -92,5 +89,5 @@
 </div>
 
 <div class="footer">
-  <p><span class="fa fa-heart"></span> peerflix</p>
+  <p>With <span class="fa fa-heart"></span> TricksRobo.com</p>
 </div>
